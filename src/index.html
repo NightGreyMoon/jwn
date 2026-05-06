@@ -1,258 +1,347 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>上海几维鸟生物科技股份有限公司 - 专业生物医学科研设备代理</title>
-    <meta name="description" content="上海几维鸟生物科技专注于生物医学科研领域产品代理，提供OCT生物成像分析系统、生物3D打印机等前沿科研设备">
-    <meta name="keywords" content="生物医学,科研设备,OCT成像,3D打印机,几维鸟,生物科技">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>北京宁泰商贸有限公司 | 生命科学与材料科学科研产品服务</title>
+    <meta
+      name="description"
+      content="北京宁泰商贸有限公司专注生命科学试剂耗材、材料科学科研产品、科研仪器与配件，提供生物3D打印机 Sprinter-04 等科研产品与技术服务。"
+    >
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-    <!-- 导航栏 -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <h2>几维鸟生物科技</h2>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">首页</a></li>
-                <li class="nav-item"><a href="#products" class="nav-link">产品中心</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">关于我们</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">联系我们</a></li>
-            </ul>
-            <div class="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="北京宁泰商贸有限公司首页">
+          <span class="brand-mark">NT</span>
+          <span class="brand-text">
+            <strong>北京宁泰商贸有限公司</strong>
+            <small>NingTai Scientific Supply</small>
+          </span>
+        </a>
 
-    <!-- 首页轮播 -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>上海几维鸟生物科技股份有限公司</h1>
-                <p class="hero-subtitle">专注生物医学科研领域产品代理</p>
-                <p class="hero-description">与众多国际知名品牌携手，将前沿、优质的科研产品引入国内市场，为科研工作者提供多样化的选择</p>
-                <div class="hero-buttons">
-                    <a href="#products" class="btn btn-primary">产品中心</a>
-                    <a href="#contact" class="btn btn-secondary">联系我们</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="生物相关产品图2.jpeg" alt="OCT生物成像分析系统">
-            </div>
-        </div>
-    </section>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">打开导航</span>
+        </button>
 
-    <!-- 产品特色 -->
-    <section class="features">
+        <nav class="site-nav" id="site-nav" aria-label="主导航">
+          <a href="#about">关于我们</a>
+          <a href="#domains">产品领域</a>
+          <a href="#sprinter">生物3D打印机</a>
+          <a href="#support">服务支持</a>
+          <a href="#contact">联系我们</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <p class="eyebrow">科研产品供应与技术服务</p>
+          <h1 id="hero-title">北京宁泰商贸有限公司</h1>
+          <p class="hero-subtitle">深耕生命科学与材料科学领域，搭建国内外优质科研产品与国内科研需求的对接桥梁。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#sprinter">查看 Sprinter-04</a>
+            <a class="button secondary" href="tel:18301210901">18301210901</a>
+          </div>
+          <dl class="hero-points">
+            <div>
+              <dt>正规原厂渠道</dt>
+              <dd>可提供溯源文件与质量检测报告</dd>
+            </div>
+            <div>
+              <dt>专业技术团队</dt>
+              <dd>覆盖选型、工艺方案与售后支持</dd>
+            </div>
+            <div>
+              <dt>全程服务体系</dt>
+              <dd>从采购交付到设备调试持续跟进</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
         <div class="container">
-            <h2 class="section-title">核心优势</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-microscope"></i>
-                    </div>
-                    <h3>前沿技术</h3>
-                    <p>引进国际先进的生物医学科研设备，技术领先</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>专业团队</h3>
-                    <p>拥有专业的技术团队，提供全方位技术支持</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>品牌合作</h3>
-                    <p>与众多国际知名品牌建立战略合作关系</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-cog"></i>
-                    </div>
-                    <h3>定制方案</h3>
-                    <p>为不同研究领域提供与之适配的产品解决方案</p>
-                </div>
+          <div class="section-heading">
+            <span>About NingTai</span>
+            <h2>关于我们</h2>
+          </div>
+          <div class="about-layout">
+            <div class="about-copy">
+              <p>
+                北京宁泰商贸有限公司深耕生命科学与材料科学领域科研产品服务，专注为国内科研院所、高校实验室及医药研发企业提供优质的前沿科研设备与耗材，依托专业的技术团队与完善的服务体系，搭建国内外优质科研产品与国内科研需求的对接桥梁，助力国内生命科学与新材料领域的科研创新发展。
+              </p>
+              <p>
+                我们秉持“专业服务、诚信为本、创新赋能”的合作理念，期待与各界科研同仁携手并进，共同推动生命科学领域的技术创新与成果转化。
+              </p>
             </div>
+            <div class="principles" aria-label="合作理念">
+              <div>
+                <strong>专业服务</strong>
+                <span>技术团队跟进实验场景与产品选型</span>
+              </div>
+              <div>
+                <strong>诚信为本</strong>
+                <span>正规渠道采购，重视质量与交付透明</span>
+              </div>
+              <div>
+                <strong>创新赋能</strong>
+                <span>持续引入前沿科研产品与工艺支持</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- 产品中心 -->
-    <section id="products" class="products">
+      <section class="section domains-section" id="domains">
         <div class="container">
-            <h2 class="section-title">产品中心</h2>
-            <div class="products-grid">
-                <!-- OCT生物成像分析系统 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="OCT.jpg" alt="OCT生物成像分析系统">
-                    </div>
-                    <div class="product-content">
-                        <h3>OCT生物成像分析系统</h3>
-                        <p class="product-model">设备型号：Sprinter-04C</p>
-                        <p class="product-desc">一种光学成像技术，用于对样品产生实时的二维横截面图像和三维体积图像，具有微米级分辨率和毫米成像深度。</p>
-                        <div class="product-features">
-                            <ul>
-                                <li>单输入偏振敏感OCT系统</li>
-                                <li>成像深度4-7mm，轴向分辨率18-24µm</li>
-                                <li>A-扫描速率高达76 kHz</li>
-                                <li>包含Humage®OCT软件包</li>
-                            </ul>
-                        </div>
-                        <button class="btn btn-primary" onclick="showProductDetails('oct')">了解更多</button>
-                    </div>
-                </div>
+          <div class="section-heading">
+            <span>Core Agency Fields</span>
+            <h2>核心代理产品领域</h2>
+          </div>
+          <div class="domain-grid">
+            <article class="domain-card">
+              <img src="images/生命科学试剂与耗材.png" alt="生命科学试剂与耗材">
+              <div class="domain-content">
+                <p class="domain-number">01</p>
+                <h3>生命科学试剂与耗材</h3>
+                <p>
+                  覆盖抗体、重组蛋白、ELISA 试剂盒、细胞因子、培养基、血清、转染试剂、分子生物学试剂盒、离心管、移液枪头、培养瓶与培养板等常用科研试剂与耗材。
+                </p>
+                <p class="brand-line">合作品牌包括 Abcam、CST、R&amp;D Systems、Thermo Fisher、Gibco 等。</p>
+              </div>
+            </article>
 
-                <!-- 生物3D打印机 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="打印机.png" alt="生物3D打印机">
-                    </div>
-                    <div class="product-content">
-                        <h3>生物3D打印机</h3>
-                        <p class="product-model">专业生物3D打印解决方案</p>
-                        <p class="product-desc">专为生物医学研究设计的高精度3D打印设备，支持多种生物材料打印，为组织工程和再生医学研究提供强大支持。</p>
-                        <div class="product-features">
-                            <ul>
-                                <li>高精度生物材料打印</li>
-                                <li>支持多种生物墨水</li>
-                                <li>精密温度控制系统</li>
-                                <li>专业软件支持</li>
-                            </ul>
-                        </div>
-                        <button class="btn btn-primary" onclick="showProductDetails('printer')">了解更多</button>
-                    </div>
-                </div>
-            </div>
+            <article class="domain-card">
+              <img src="images/材料科学科研产品.png" alt="材料科学科研产品">
+              <div class="domain-content">
+                <p class="domain-number">02</p>
+                <h3>材料科学科研产品</h3>
+                <p>
+                  代理医用级高分子材料、生物墨水材料、石墨烯、碳纳米管、纳米粉末、功能高分子材料、半导体材料等产品，可根据客户需求提供定制化产品。
+                </p>
+                <p class="brand-line">适用于材料研发、组织工程、新材料评价等多方向科研需求。</p>
+              </div>
+            </article>
+
+            <article class="domain-card">
+              <img src="images/科研仪器与设备.png" alt="科研仪器与配件">
+              <div class="domain-content">
+                <p class="domain-number">03</p>
+                <h3>科研仪器与配件</h3>
+                <p>
+                  代理小型科研仪器以及大型仪器原厂替换配件，涵盖显微镜、紫外分光光度计、高速离心机、基因扩增仪、电泳系统、移液器、恒温培养箱、二氧化碳培养箱等。
+                </p>
+                <p class="brand-line">重点产品包括生物 3D 打印机、类器官批量化制造设备、移液工作站等。</p>
+              </div>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- 关于我们 -->
-    <section id="about" class="about">
+      <section class="section product-section" id="sprinter">
         <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="section-title">关于我们</h2>
-                    <p>上海几维鸟生物科技股份有限公司专注于生物医学科研领域产品代理，与众多国际知名品牌携手，将前沿、优质的科研产品引入国内市场，为科研工作者提供多样化的选择。</p>
-                    <p>无论是基础研究、临床研究还是药物研发等不同领域，我们都能提供与之适配的产品解决方案。我们拥有专业的技术团队和完善的售后服务体系，致力于为客户提供优质的产品和服务。</p>
-                    <p>我们期待与您携手，在生物医学科研的道路上共同探索，为推动行业发展贡献力量。</p>
-                </div>
-                <div class="about-image">
-                    <img src="创建公司网页介绍.png" alt="公司介绍">
-                </div>
+          <div class="product-intro">
+            <div class="product-media">
+              <img class="product-main-image" src="images/生物3D打印机.png" alt="Sprinter-04 生物3D打印机产品图">
             </div>
-        </div>
-    </section>
+            <div class="product-copy">
+              <p class="eyebrow">产品 · 生物 3D 打印机</p>
+              <h2>Sprinter-04</h2>
+              <p class="product-slogan">精准造物 赋能生命</p>
+              <p>
+                新一代高端科研生物 3D 打印机，融合高精度运动控制、多材料兼容系统与无菌化成型工艺，为科研机构、医药企业与临床转化平台提供从材料测试打印、三维模型构建到原型验证等流程技术支持，让复杂活性组织的制造变得简单可控。
+              </p>
+              <p class="quote">高活性、高精度、广兼容</p>
+            </div>
+          </div>
 
-    <!-- 联系我们 -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">联系我们</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>公司地址</h3>
-                            <p>上海市奉贤区大叶公路6758号4幢1层</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>联系电话</h3>
-                            <p>13967373270</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>电子邮箱</h3>
-                            <p>453007021@qq.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <h3>获取产品信息</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="您的姓名" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="电子邮箱" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="联系电话" required>
-                        </div>
-                        <div class="form-group">
-                            <select required>
-                                <option value="">请选择感兴趣的产品</option>
-                                <option value="oct">OCT生物成像分析系统</option>
-                                <option value="printer">生物3D打印机</option>
-                                <option value="other">其他产品咨询</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="留言内容"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">提交咨询</button>
-                    </form>
-                </div>
-            </div>
+          <div class="feature-grid" aria-label="Sprinter-04 产品特点">
+            <article>
+              <span>01</span>
+              <h3>高通量</h3>
+              <p>喷头库支持 4 种喷头，机械臂可自动移动到喷头库切换喷头。</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>高保真</h3>
+              <p>全自动电脑控制，电脑工作站一体式设计，无需额外电脑桌。</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>高智能</h3>
+              <p>摄像头支持 1200 万像素与 0 到 200 倍放大，针尖自动校准反馈。</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>高洁净</h3>
+              <p>H 级超净工作室，无菌打印舱，医用临床级别打印包含自动喷头清洗装置。</p>
+            </article>
+            <article>
+              <span>05</span>
+              <h3>高稳定</h3>
+              <p>包含紧急停止、断电记忆、数据实时保存与内置 UPS 保护。</p>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- 页脚 -->
-    <footer class="footer">
+      <section class="section compatibility-section">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>上海几维鸟生物科技股份有限公司</h3>
-                    <p>专注生物医学科研领域产品代理</p>
-                </div>
-                <div class="footer-links">
-                    <h4>快速链接</h4>
-                    <ul>
-                        <li><a href="#home">首页</a></li>
-                        <li><a href="#products">产品中心</a></li>
-                        <li><a href="#about">关于我们</a></li>
-                        <li><a href="#contact">联系我们</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>联系方式</h4>
-                    <p><i class="fas fa-phone"></i> 13967373270</p>
-                    <p><i class="fas fa-envelope"></i> 453007021@qq.com</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 上海几维鸟生物科技股份有限公司. 保留所有权利.</p>
-            </div>
+          <div class="section-heading compact">
+            <span>Material Compatibility</span>
+            <h2>兼容材料种类</h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>材料类别</th>
+                  <th>代表材料</th>
+                  <th>核心优势</th>
+                  <th>主要应用场景</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>天然高分子</td>
+                  <td>胶原、明胶、海藻酸盐</td>
+                  <td>生物相容性好、生物活性高</td>
+                  <td>载细胞打印、软组织修复、敷料</td>
+                </tr>
+                <tr>
+                  <td>合成高分子</td>
+                  <td>PLA、PCL、PEG</td>
+                  <td>性能可控、批次稳定、力学强度好</td>
+                  <td>骨支架、正畸产品、植入物</td>
+                </tr>
+                <tr>
+                  <td>无机材料</td>
+                  <td>羟基磷灰石、β-TCP</td>
+                  <td>成骨活性高、力学强度好</td>
+                  <td>硬组织修复、口腔种植</td>
+                </tr>
+                <tr>
+                  <td>复合材料</td>
+                  <td>PCL/HA、海藻酸盐/明胶</td>
+                  <td>性能互补，兼顾多维度需求</td>
+                  <td>组织工程支架、个性化植入物</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+      </section>
+
+      <section class="section applications-section">
+        <div class="container">
+          <div class="section-heading">
+            <span>Applications</span>
+            <h2>核心应用场景</h2>
+          </div>
+          <div class="application-grid">
+            <article>
+              <h3>组织工程支架制备</h3>
+              <p>
+                可精准制备骨、软骨、皮肤、血管等不同组织的仿生支架，支持负载种子细胞与生长因子，用于再生医学移植研究。
+              </p>
+            </article>
+            <article>
+              <h3>类器官构建</h3>
+              <p>
+                高精度多材料打印能力支持类器官高通量制备，精准控制细胞分布与微环境结构，搭配多孔板打印模块可实现 96 孔板类器官批量制备。
+              </p>
+            </article>
+            <article>
+              <h3>药物筛选与毒性测试</h3>
+              <p>
+                基于 3D 打印的肿瘤类器官可更好模拟体内肿瘤微环境，比传统 2D 培养筛选结果更接近临床实际，帮助提高新药筛选准确率。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section support-section" id="support">
+        <div class="container">
+          <div class="support-layout">
+            <div>
+              <div class="section-heading align-left">
+                <span>Service & Support</span>
+                <h2>服务与支持</h2>
+              </div>
+              <p class="support-lead">我们不只是提供设备，更是为您提供全流程的技术支持。</p>
+            </div>
+            <div class="support-list">
+              <article>
+                <h3>上门安装调试</h3>
+                <p>专业工程师上门完成设备安装、环境校准与操作培训，保证设备快速投入使用。</p>
+              </article>
+              <article>
+                <h3>工艺方案定制</h3>
+                <p>针对特定研究方向，提供材料参数优化、打印路径设计等技术支持，缩短工艺摸索周期。</p>
+              </article>
+              <article>
+                <h3>一年免费质保</h3>
+                <p>整机提供一年免费保修服务，核心部件延长至两年，48 小时响应售后问题。</p>
+              </article>
+              <article>
+                <h3>持续软件升级</h3>
+                <p>终身免费提供软件版本更新，开放自定义材料参数接口，支持研究拓展需求。</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section vision-section">
+        <div class="container narrow">
+          <div class="section-heading">
+            <span>Partnership Vision</span>
+            <h2>合作愿景</h2>
+          </div>
+          <p>
+            我们期待与更多国内外优质科研产品厂商建立深度合作，汇聚更多前沿科研资源，持续拓展产品与服务覆盖范围，为国内科研工作者带来更优质、更高效、更全面的科研服务支持，与合作伙伴、科研同仁一道，共同助力生命科学与材料科学领域的科研突破，推动更多创新科研成果落地转化，携手打造更具活力的科研服务生态。
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="section-heading">
+            <span>Contact</span>
+            <h2>联系方式</h2>
+          </div>
+          <div class="contact-grid">
+            <a href="tel:18301210901">
+              <span>联系电话</span>
+              <strong>18301210901</strong>
+            </a>
+            <a href="mailto:240412698@qq.com">
+              <span>邮箱</span>
+              <strong>240412698@qq.com</strong>
+            </a>
+            <address>
+              <span>公司地址</span>
+              <strong>北京市顺义区昌金路赵全营段169号院3幢5层507室</strong>
+            </address>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 北京宁泰商贸有限公司</p>
+        <a href="#top">返回顶部</a>
+      </div>
     </footer>
 
-    <!-- 产品详情模态框 -->
-    <div id="productModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="modalContent"></div>
-        </div>
-    </div>
-
     <script src="script.js"></script>
-</body>
-</html> 
+  </body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCT生物成像技术详解 - 上海几维鸟生物科技</title>
+    <meta name="description" content="详细了解OCT生物成像分析系统的技术原理、特性参数和应用优势">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .tech-detail {
+            padding: 120px 0 80px;
+            background: #f8f9fa;
+        }
+        
+        .tech-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tech-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .tech-header h1 {
+            color: #2c5aa0;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .model-badge {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            display: inline-block;
+        }
+        
+        .tech-intro {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 3rem;
+            text-align: justify;
+        }
+        
+        .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .spec-card {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .spec-card h3 {
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+        }
+        
+        .spec-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .spec-list li {
+            padding: 0.5rem 0;
+            color: #555;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .spec-list li:before {
+            content: "▶";
+            color: #667eea;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .principle-section {
+            margin: 4rem 0;
+        }
+        
+        .principle-section h2 {
+            color: #2c5aa0;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .principle-content {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+        
+        .principle-image {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
+        .principle-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .wavelength-section {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+            text-align: center;
+        }
+        
+        .wavelength-section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: #5a67d8;
+            transform: translateY(-2px);
+        }
+        
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .advantage-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .advantage-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+        }
+        
+        .advantage-icon i {
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .tech-content {
+                margin: 0 20px;
+                padding: 2rem;
+            }
+            
+            .tech-header h1 {
+                font-size: 2rem;
+            }
+            
+            .spec-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>几维鸟生物科技</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">返回首页</a></li>
+                <li class="nav-item"><a href="index.html#products" class="nav-link">产品中心</a></li>
+                <li class="nav-item"><a href="index.html#about" class="nav-link">关于我们</a></li>
+                <li class="nav-item"><a href="index.html#contact" class="nav-link">联系我们</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 技术详解内容 -->
+    <section class="tech-detail">
+        <div class="tech-content">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> 返回首页
+            </a>
+            
+            <div class="tech-header">
+                <h1>OCT生物成像分析系统</h1>
+                <div class="model-badge">设备型号：Sprinter-04C</div>
+            </div>
+
+            <div class="tech-intro">
+                OCT是一种光学成像技术，用于对样品产生实时的二维横截面图像和三维体积图像。这种技术基于从样品内不同材料层的光反向散射产生微米级分辨率和毫米成像深度的图像，从而提供关于样品的结构信息。除了高分辨率之外，OCT的无接触、无创伤性质使它非常适合对诸如生物组织、小动物和工业材料等样品进行成像。
+            </div>
+
+            <h2 style="color: #2c5aa0; text-align: center; margin-bottom: 2rem;">产品优势</h2>
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h4>无接触成像</h4>
+                    <p>无创伤性质，适合生物组织成像</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h4>高分辨率</h4>
+                    <p>微米级分辨率，毫米成像深度</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>实时成像</h4>
+                    <p>实时二维横截面和三维体积图像</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h4>多维成像</h4>
+                    <p>2D断层图像和3D体积数据集</p>
+                </div>
+            </div>
+
+            <h2 style="color: #2c5aa0; text-align: center; margin: 3rem 0 2rem;">技术特性</h2>
+            <div class="spec-grid">
+                <div class="spec-card">
+                    <h3>系统配置</h3>
+                    <ul class="spec-list">
+                        <li>单输入偏振敏感OCT系统</li>
+                        <li>独特的探测单元设计</li>
+                        <li>强大的系统装置</li>
+                        <li>高度可重复的测量</li>
+                        <li>可配置的系统架构</li>
+                    </ul>
+                </div>
+
+                <div class="spec-card">
+                    <h3>成像参数（1310nm）</h3>
+                    <ul class="spec-list">
+                        <li>成像深度：4mm</li>
+                        <li>轴向分辨率：18µm（空气中）</li>
+                        <li>中心波长：1310nm</li>
+                        <li>高分辨率成像优化</li>
+                    </ul>
+                </div>
+
+                <div class="spec-card">
+                    <h3>成像参数（1325nm）</h3>
+                    <ul class="spec-list">
+                        <li>成像深度：7.0mm</li>
+                        <li>轴向分辨率：24µm（空气中）</li>
+                        <li>中心波长：1325nm</li>
+                        <li>高深度成像优化</li>
+                    </ul>
+                </div>
+
+                <div class="spec-card">
+                    <h3>性能参数</h3>
+                    <ul class="spec-list">
+                        <li>A-扫描速率：高达76kHz</li>
+                        <li>灵敏度：高达109dB</li>
+                        <li>包含计算机系统</li>
+                        <li>Humage®OCT软件包</li>
+                        <li>预配置和自搭建选项</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="principle-section">
+                <h2>成像原理</h2>
+                <div class="principle-content">
+                    <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                        现在，高速、高灵敏度、可测量的傅立叶域相干层析成像（FD-OCT）成为主流。FD-OCT基于利用光源的相干特性测量样品中光路长度延迟的低相干干涉法。在OCT中，为了以μm级的分辨率获得截面图像，干涉仪被设定为测量从样品反射的光与参照臂的光路长度之差。
+                    </p>
+                    
+                    <div class="principle-image">
+                        <img src="OCTInfo.png" alt="OCT成像原理图">
+                        <p style="margin-top: 1rem; color: #666; font-style: italic;">OCT成像原理示意图</p>
+                    </div>
+                    
+                    <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                        如图所示，光分为迈克尔逊干涉仪的样品臂和参考臂。由样品中折射率的变化引起的反射光再次入射到样品臂光路的光纤内，与经过一定光路的传输而返回参考臂中的光结合。结果得到的接口程序（干涉条纹）通过干涉仪的检测臂进行测量。
+                    </p>
+                    
+                    <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                        由平衡探测器测量的接口的频率与反射体在样品中的位置深度有关。结果，通过对测量的接口程序进行傅里叶变换，可以获得深度（一维）方向的反射率轮廓（A-扫描）。二维断层图像（B-扫描）通过扫描照射到OCT样品的光线来创建。
+                    </p>
+                    
+                    <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                        由于样品臂的光线在样品中进行扫描，因此可以通过重叠一系列的A-扫描信息来制作二维图像。同样，当OCT的光源沿正交方向扫描时，可以通过二维图像的集合来构成三维体积数据集。在FD-OCT中，二维图像以毫秒为单位进行测量，而三维图像现在以不到1秒的速度进行测量。
+                    </p>
+                    
+                    <p style="line-height: 1.8;">
+                        Santec的OCT在FD-OCT中使用最先进技术的高速波长扫描光源的方式（SS-OCT），具有高速、高灵敏度、长测量范围。SS-OCT使用高速扫频率扫描光源和光电检测器，以高速获取接口程序。接口程序被检测为光频率的函数。由于参考臂内的光延迟是固定的，来自样品不同深度的反射光会产生具有不同频率分量的干涉条纹。然后通过傅立叶变换分离来自不同深度的信号，生成采样深度方向轮廓。
+                    </p>
+                </div>
+            </div>
+
+            <div class="wavelength-section">
+                <h3>波长特性</h3>
+                <p>系统支持多种波长配置，可根据不同应用需求选择最适合的波长范围，确保最佳的成像效果和穿透深度。</p>
+                <div style="margin-top: 2rem;">
+                    <img src="OCTInfo.jpg" alt="波长特性图" style="max-width: 100%; height: auto; border-radius: 10px;">
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <h3 style="color: #2c5aa0; margin-bottom: 2rem;">了解更多产品信息</h3>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="index.html#contact" style="background: #ff6b6b; color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: 600;">
+                        获取详细报价
+                    </a>
+                    <a href="index.html#products" style="background: transparent; color: #667eea; border: 2px solid #667eea; padding: 10px 28px; border-radius: 25px; text-decoration: none; font-weight: 600;">
+                        查看更多产品
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>上海几维鸟生物科技股份有限公司</h3>
+                    <p>专注生物医学科研领域产品代理</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="index.html#products">产品中心</a></li>
+                        <li><a href="index.html#about">关于我们</a></li>
+                        <li><a href="index.html#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系方式</h4>
+                    <p><i class="fas fa-phone"></i> 13967373270</p>
+                    <p><i class="fas fa-envelope"></i> 453007021@qq.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 上海几维鸟生物科技股份有限公司. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
